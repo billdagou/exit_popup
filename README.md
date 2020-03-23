@@ -1,2 +1,3 @@
-# exit_popup
-A Bootstrap Modal based popup viewhelper when exiting in TYPO3
+# TYPO3 Extension: Exit Popup
+
+Popup a Bootstrap Modal when people try to leave the page.
