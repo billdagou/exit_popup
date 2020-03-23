@@ -2,7 +2,7 @@ $(document).ready(function() {
     var hasTriggered = false;
     var lastY = -1;
     var move = function(e) {
-        if (hasTriggered || e.pageY > lastY || e.pageY > expop.sensitivity) {
+        if (hasTriggered || e.pageY > lastY || e.pageY > expop.sensitivity + $(this).scrollTop()) {
             lastY = e.pageY;
 
             return;
