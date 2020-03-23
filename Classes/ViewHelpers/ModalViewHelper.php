@@ -13,7 +13,6 @@ class ModalViewHelper extends AbstractTagBasedViewHelper {
 
     public function initializeArguments() {
         $this->registerArgument('target', 'string', 'Modal identifier', TRUE);
-        $this->registerArgument('sensitivity', 'int', 'Sensitivity', FALSE, 10);
         $this->registerArgument('name', 'string', 'Cookie name', FALSE, 'expop');
         $this->registerArgument('expires', 'int', 'Expiring days', FALSE, 3);
         $this->registerArgument('footer', 'boolean', 'Add to footer or not.', FALSE, TRUE);

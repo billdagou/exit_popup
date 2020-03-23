@@ -1,8 +1,8 @@
 $(document).ready(function() {
     var hasTriggered = false;
     var lastY = -1;
-    var move = function(e) {
-        if (hasTriggered || e.pageY > lastY || e.pageY > expop.sensitivity + $(this).scrollTop()) {
+    var trigger = function(e) {
+        if (hasTriggered || e.pageY >= lastY) {
             lastY = e.pageY;
 
             return;
@@ -19,5 +19,5 @@ $(document).ready(function() {
         hasTriggered = true;
     };
 
-    $(document).on('mousemove', move);
+    $(document).on('mouseleave', trigger);
 });
